@@ -1,12 +1,12 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import psycopg2
-from config import BOT_TOKEN, DB_CONFIG
+from config import TOKEN, DB_CONFIG
 from datetime import date
 import calendar
 from datetime import datetime, timedelta
 
-bot = telebot.TeleBot(BOT_TOKEN)
+bot = telebot.TeleBot(TOKEN)
 
 # Подключение к базе
 conn = psycopg2.connect(**DB_CONFIG)
